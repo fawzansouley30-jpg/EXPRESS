@@ -1,9 +1,0 @@
-EXPRESS FINAL - GUIDE
-1. Décompresse le ZIP.
-2. Ouvre index.html = boutique.
-3. Ouvre admin.html = gestion des produits.
-4. Dans admin.html, remplis nom, catégorie, prix, description, photo et lien affilié.
-5. Clique sur "Ajouter le produit".
-6. Ouvre index.html pour voir le produit.
-
-IMPORTANT : cette version de test sauvegarde les produits dans le navigateur. Pour un vrai site public, nous connecterons ensuite la boutique à une base de données en ligne afin que les produits soient visibles par tous.
