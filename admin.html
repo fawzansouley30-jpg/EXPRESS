@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EXPRESS - Gestion</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="index.html">EXPRESS</a><a class="admin-link" href="index.html">← Voir la boutique</a></div></header>
+<main class="wrap admin"><h1>Ajouter un produit</h1>
+<p class="muted">Remplis les champs puis clique sur Ajouter le produit.</p>
+<form id="productForm" class="form">
+<label>Nom du produit<input id="name" required></label>
+<label>Catégorie<select id="category"><option>Gadget</option><option>Accessoire</option><option>Maison</option><option>Tendance</option></select></label>
+<label>Prix affiché (optionnel)<input id="price" placeholder="Ex. 9,99 €"></label>
+<label>Description<textarea id="description" required></textarea></label>
+<label>Photo du produit<input id="image" type="file" accept="image/*" required></label>
+<label>Lien affilié AliExpress<input id="link" type="url" required placeholder="https://..."></label>
+<button class="btn" type="submit">➕ Ajouter le produit</button>
+</form>
+<h2>Produits ajoutés</h2><div id="adminProducts"></div>
+<button id="clearAll" class="danger" type="button">Supprimer tous les produits</button>
+</main><script src="admin.js"></script></body></html>
