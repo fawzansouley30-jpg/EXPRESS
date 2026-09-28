@@ -1,0 +1,10 @@
+alter table public.products add column if not exists user_id uuid references auth.users(id);
+alter table public.products enable row level security;
+drop policy if exists "Public can read products" on public.products;
+drop policy if exists "Authenticated users can insert own products" on public.products;
+drop policy if exists "Users can delete own products" on public.products;
+drop policy if exists "Users can update own products" on public.products;
+create policy "Public can read products" on public.products for select to anon,authenticated using (true);
+create policy "Authenticated users can insert own products" on public.products for insert to authenticated with check (auth.uid()=user_id);
+create policy "Users can delete own products" on public.products for delete to authenticated using (auth.uid()=user_id);
+create policy "Users can update own products" on public.products for update to authenticated using (auth.uid()=user_id) with check (auth.uid()=user_id);

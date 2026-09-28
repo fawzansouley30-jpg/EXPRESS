@@ -1,0 +1,9 @@
+EXPRESS + SUPABASE
+1. Dans Supabase > SQL Editor, exécute SQL_SETUP.sql UNE FOIS.
+2. Remplace les fichiers de ton dépôt GitHub par ceux de cette version.
+3. Cloudflare redéploiera automatiquement.
+4. Ouvre ton site puis /admin.html.
+5. Clique "Créer mon compte".
+6. Confirme ton email si Supabase le demande, puis connecte-toi.
+7. Ajoute un produit : il sera enregistré dans Supabase et visible par tous.
+IMPORTANT : ne mets jamais une clé sb_secret_ dans le site. Cette version utilise la Publishable key.
